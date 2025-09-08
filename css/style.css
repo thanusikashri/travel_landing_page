@@ -21,6 +21,12 @@ ul li {
     background-image: none;
     list-style: none;
     padding: 8px 12px;
+    background-color: #bfdbd7;
+    border-radius: 8px;
+}
+
+.nav ul li a:hover {
+    background-color: rgb(182, 248, 226);
 }
 
 ul li a {
@@ -29,16 +35,13 @@ ul li a {
     color: darkslategrey;
     padding: 5px;
     font-weight: 600;
-    text-align: center;
+    font-size: 1.5rem;
 }
 
 .nav {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 10px 0px;
-    position: relative;
 }
 
 .nav {
@@ -60,6 +63,10 @@ ul li a {
     justify-content: center;
     font-family: monospace;
     font-size: 16px;
+}
+
+.logo img {
+    align-items: center;
 }
 
 .img p {
@@ -111,36 +118,29 @@ ul li a {
     align-items: center;
     text-align: center;
     width: 95%;
-    background-image: url("../img1/img.jpg");
+    background-image: url("../images/bg4.jpg");
 }
 
 .destination h1 {
     font-family: 'Times New Roman', Times, serif;
     text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
-    background: linear-gradient(to right, lightgrey, lightcyan);
-    border-radius: 8px;
-    margin: 0;
     text-align: center;
     padding: 15px;
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-top: 5px;
 }
 
 .destination-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    align-items: stretch;
 }
 
 .destination-card {
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
     background: lightcyan;
     border-radius: 12px;
     box-shadow: 0 4px 10px;
-    overflow: hidden;
 }
 
 .destination-card:hover {
@@ -323,7 +323,7 @@ ul li a {
 }
 
 .ebook h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     text-align: center;
     color: #333;
     background: linear-gradient(5deg, darkred, #000, darkred, #000, darkred);
