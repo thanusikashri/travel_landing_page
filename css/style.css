@@ -1,6 +1,5 @@
 ul li {
     display: inline;
-    gap: 30px;
 }
 
 .img h1 {
@@ -32,7 +31,6 @@ ul li a {
     font-size: larger;
     text-decoration: none;
     color: rgb(45, 63, 63);
-    padding: 5px;
     font-weight: 600;
     font-size: 1.5rem;
 }
@@ -132,19 +130,18 @@ ul li a {
 
 .destination-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
 .destination-card {
-    flex-direction: column;
     background: lightcyan;
     border-radius: 12px;
     box-shadow: 0 4px 10px;
 }
 
 .destination-card:hover {
-    transform: translateY(-15px);
+    transform: translateY(-10px);
 }
 
 .destination-card img {
@@ -179,7 +176,7 @@ ul li a {
 .tag {
     color: black;
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .about-content h1 {
@@ -199,7 +196,7 @@ ul li a {
     text-align: center;
     margin: 20px 0;
     line-height: 1.8;
-    background: linear-gradient(to right,rgb(183, 158, 112), lightgrey);
+    background: linear-gradient(to right,rgb(218, 192, 143), lightgrey);
     border-radius: 8px;
     font-weight: 600;
     font-size: 20px;
@@ -242,6 +239,7 @@ ul li a {
 
 .about-img img:hover {
     transform: translateY(-5px);
+    
 }
 
 .contact-page {
@@ -284,8 +282,8 @@ ul li a {
 
 .contact-info h3 {
     margin-top: 20px;
-    color: #d32b1c;
-    font-size: 1.5rem;
+    color: #de4436;
+    font-size: 1.7rem;
 }
 
 .contact-info p {
@@ -349,16 +347,18 @@ ul li a {
     padding: 12px;
     margin-bottom: 15px;
     border-radius: 8px;
+    height: 20px;
 }
 
 .ebook-form button {
-    background: #e0ad66;
+    background: #e7b672;
     padding: 12px;
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .ebook-form button:hover {
-    background: #eea434;
+    background: #f9b755;
 }
