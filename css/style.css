@@ -50,7 +50,7 @@ ul li a {
 }
 
 .img {
-    background-image: url("../img/img.jpg");
+    background-image: url("../images/img/img.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     overflow-x: hidden;
