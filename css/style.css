@@ -21,18 +21,17 @@ ul li {
     background-image: none;
     list-style: none;
     padding: 8px 12px;
-    background-color: #bfdbd7;
-    border-radius: 8px;
 }
 
 .nav ul li a:hover {
-    background-color: rgb(182, 248, 226);
+    background-color: rgb(235, 234, 228);
+    border-radius: 8px;
 }
 
 ul li a {
     font-size: larger;
     text-decoration: none;
-    color: darkslategrey;
+    color: rgb(45, 63, 63);
     padding: 5px;
     font-weight: 600;
     font-size: 1.5rem;
@@ -54,7 +53,7 @@ ul li a {
     background-image: url("../img/img.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 800px;
+    overflow-x: hidden;
 }
 
 .content {
@@ -75,7 +74,7 @@ ul li a {
     justify-content: center;
     font-size: 24px;
     text-align: center;
-    line-height: 2;
+    line-height: 1.5;
     font-family: Arial, Helvetica, sans-serif;
     color: darkslateblue;
     font-weight: 600;
@@ -107,7 +106,6 @@ ul li a {
     justify-content: center;
     font-size: large;
     text-align: center;
-    line-height: 2;
     font-family: Arial, Helvetica, sans-serif;
     color: darkslateblue;
     font-weight: 600;
@@ -119,6 +117,8 @@ ul li a {
     text-align: center;
     width: 95%;
     background-image: url("../images/bg4.jpg");
+    background-size: cover;
+    overflow-x: hidden;
 }
 
 .destination h1 {
@@ -144,7 +144,7 @@ ul li a {
 }
 
 .destination-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-15px);
 }
 
 .destination-card img {
