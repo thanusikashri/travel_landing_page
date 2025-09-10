@@ -3,7 +3,6 @@ ul li {
 }
 
 .img h1 {
-    color: darkmagenta;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,6 +19,8 @@ ul li {
     background-image: none;
     list-style: none;
     padding: 8px 12px;
+    background-color: #f5d9ab;
+    border-radius: 8px;
 }
 
 .nav ul li a:hover {
@@ -30,7 +31,7 @@ ul li {
 ul li a {
     font-size: larger;
     text-decoration: none;
-    color: rgb(45, 63, 63);
+    color: black;
     font-weight: 600;
     font-size: 1.5rem;
 }
@@ -52,6 +53,16 @@ ul li a {
     background-size: cover;
     background-repeat: no-repeat;
     overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.img .nav ul li a {
+    background-color: #81bcc3;
+}
+
+.img .nav ul li a:hover {
+    background-color: rgb(235, 234, 228);
+    border-radius: 8px;
 }
 
 .content {
@@ -109,21 +120,32 @@ ul li a {
     font-weight: 600;
 }
 
+.dest {
+    overflow-x: hidden;
+    background-image: url("../images/bg4.jpg");
+    background-size: cover;
+}
+
+.dest .nav ul li a {
+    background-color: #9dd8df;
+}
+
+.dest .nav ul li a:hover {
+    background-color: rgb(235, 234, 228);
+    border-radius: 8px;
+}
+
 .destination {
     padding: 50px;
     align-items: center;
     text-align: center;
     width: 95%;
-    background-image: url("../images/bg4.jpg");
-    background-size: cover;
-    overflow-x: hidden;
 }
 
 .destination h1 {
     font-family: 'Times New Roman', Times, serif;
     text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
     text-align: center;
-    padding: 15px;
     font-size: 2.5rem;
     margin-top: 5px;
 }
@@ -141,7 +163,14 @@ ul li a {
 }
 
 .destination-card:hover {
-    transform: translateY(-10px);
+    animation-name: example;
+    animation-duration: 1s;
+    transform: translateY(5px);
+}
+
+@keyframes example {
+  from {background-color: lightcyan;}
+  to {background-color: rgb(107, 212, 215);}
 }
 
 .destination-card img {
@@ -152,6 +181,11 @@ ul li a {
 
 .destination-card h3 {
     font-family: sans-serif;
+}
+
+.abt {
+    background-image: url("../images/bg2.jpg");
+    overflow-x: hidden;
 }
 
 .about body {
@@ -166,7 +200,6 @@ ul li a {
     align-items: center;
     justify-content: center;
     padding: 60px;
-    background-image: url("../images/bg2.jpg");
 }
 
 .about-content {
@@ -227,6 +260,7 @@ ul li a {
     flex-direction: column;
     gap: 15px;
     align-items: center;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .about-img img {
@@ -235,12 +269,19 @@ ul li a {
     border-radius: 15px;
     box-shadow: 0 4px 15px;
     overflow: hidden;
+    grid-template-columns: repeat(2, 1fr);
+    
 }
 
 .about-img img:hover {
     transform: translateY(-5px);
-    
 }
+
+ .cnt {
+    background-image: url("../images/bg3.jpg");
+    background-size: cover;
+    overflow-x: hidden;
+ }
 
 .contact-page {
     display: flex;
@@ -248,8 +289,6 @@ ul li a {
     align-items: center;
     justify-content: center;
     padding: 60px;
-    background-image: url("../images/bg3.jpg");
-    background-size: cover;
     padding: 50px;
     text-align: center;
 }
@@ -300,6 +339,20 @@ ul li a {
     text-decoration: underline;
 }
 
+.logo {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.logo a {
+    padding: 10px;
+}
+
+.logo a img {
+    border-radius: 18px;
+}
+
+
 .faq p {
     background: #e4d7ab;
     padding: 12px;
@@ -309,15 +362,19 @@ ul li a {
     font-size: 1.2rem;
 }
 
+.book {
+    background-image: url("../images/book.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
 .ebook-page {
     display: grid;
     grid-template-columns: 1fr, 1fr;
     align-items: center;
     gap: 40px;
     padding: 50px;
-    background-image: url("../images/book.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .ebook h1 {
